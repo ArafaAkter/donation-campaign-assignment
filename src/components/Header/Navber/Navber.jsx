@@ -1,13 +1,10 @@
 import { NavLink } from "react-router-dom";
+import Logo from "./logo";
 const Navber = () => {
     return (
-        <div className="flex justify-around items-center">
-            <div>
-               <img src="/Resources/Logo.png" alt="" srcset="" />
-            </div>
-           <div>
-           <nav>
-                
+        <div>
+           <nav className="flex  justify-around items-start py-10">
+                <Logo></Logo>
                 <ul className="flex gap-5 ">
                     <li>
                     <NavLink
@@ -42,7 +39,7 @@ const Navber = () => {
                 </ul>
             </nav>
            </div>
-        </div>
+       
     );
 };
 
