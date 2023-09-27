@@ -1,9 +1,12 @@
 /* eslint-disable react/prop-types */
 
+import { Link } from "react-router-dom";
+
 const Cart = ({card}) => {
-    const {img,category,title,text_color,background,category_bg} = card || {}
+    const {id,img,category,title,text_color,background,category_bg} = card || {}
     return (
-          <div className="rounded" style={{backgroundColor: background}}>
+       <Link to={`/src/components/Cards/${id}`}>
+               <div className="rounded" style={{backgroundColor: background}}>
             <div className="cards">
             <figure><img src={img}/></figure>
             <div className="card-body">
@@ -13,6 +16,7 @@ const Cart = ({card}) => {
         </div>
         </div>
         </div>
+       </Link>
     );
 };
 
