@@ -1,14 +1,14 @@
 /* eslint-disable react/prop-types */
 
 const Cart = ({card}) => {
-    const {img,name,title} = card || {}
+    const {img,category,title,text_color,background,category_bg} = card || {}
     return (
-          <div>
-            <div className="card  bg-base-100 shadow-xl">
+          <div className="rounded" style={{backgroundColor: background}}>
+            <div className="cards">
             <figure><img src={img}/></figure>
             <div className="card-body">
-            <h2 className="card-title">{name}</h2>
-            <p>{title}</p>
+            <h2 className="card-category w-4/12 text-center rounded"style={{color: text_color, backgroundColor: category_bg}} >{category}</h2>
+            <p style={{color: text_color}} > {title} </p>
            
         </div>
         </div>
