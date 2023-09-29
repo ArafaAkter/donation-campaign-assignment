@@ -3,7 +3,7 @@ import Logo from "./logo";
 const Navber = () => {
     return (
         <div>
-           <nav className="flex  justify-around items-start py-10">
+           <nav className="flex  justify-around items-start  py-10">
                 <Logo></Logo>
                 <ul className="flex gap-5 ">
                     <li>
