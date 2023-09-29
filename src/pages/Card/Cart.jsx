@@ -2,7 +2,7 @@
 import swal from 'sweetalert';
 const Cart = ({card}) => {
     
-    const {img,title,description,donate,text_color} = card || {}
+    const {id,img,title,description,donate,text_color} = card || {}
 
     const hadleDonateToDonation =() =>{
         const addedDonationArray=[];
