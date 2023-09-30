@@ -10,6 +10,7 @@ const Donation = () => {
     const [donation,setDonation] =useState([])
     const [noFound,setNofound] = useState("");
     const[isShow,setIsShow] = useState(false)
+   
 
     useEffect(()=>{
         const donationItems = JSON.parse(localStorage.getItem('donation'))
@@ -26,7 +27,7 @@ const Donation = () => {
         <div >
            {noFound ? <p className="h-[80vh] flex justify-center items-center">{noFound}</p> : <div>
 
-              <div className="grid grid-cols-2">
+              <div className=" lg:grid grid-cols-2">
                 {
                     isShow ? donation.map((card)=>(
                         <DonationCart key={card.id} card={card}></DonationCart>))

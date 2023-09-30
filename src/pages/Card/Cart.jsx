@@ -27,7 +27,7 @@ const Cart = ({card}) => {
          <div className="w-9/12 relative mx-auto ">
            <img className="w-11/12 rounded" src={img} />
            <div>
-           <button onClick={hadleDonateToDonation} className=" text-white p-3 w-2/12 rounded absolute -my-20 mx-5" style={{backgroundColor: text_color}}> Donate : {donate}</button>
+           <button onClick={hadleDonateToDonation} className=" text-white p-3 lg:w-2/12 rounded absolute -my-20 mx-5" style={{backgroundColor: text_color}}> Donate : {donate}</button>
            </div>
             <p className="text-3xl font-bold mt-10">{title}</p>
             <p className="mt-5">{description}</p>
